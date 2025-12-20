@@ -2,6 +2,7 @@
 layout: default
 ---
 
+{% include hero.html %}
 
 ## Moor your boat at Elevated Tides
 
