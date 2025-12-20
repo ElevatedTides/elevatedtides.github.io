@@ -1,0 +1,33 @@
+<footer class="site-footer h-card">
+  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+    	<h2 class="footer-heading">{{ site.title | escape }}</h2>
+	{%- if site.address -%}
+        <p>{{- site.address -}}</p>
+	{%- endif -%}
+	<p><a href="https://g.co/kgs/Bhs8JLD">Google Maps</a></p>
+      </div>
+
+      <div class="footer-col footer-col-2">
+    	<h2 class="footer-heading">Connect</h2>
+	{%- if site.phone -%}
+	<a href="tel:{{ site.phone }}">{{ site.phone }}</a>
+	{%- endif -%}
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <ul class="contact-list">
+          {%- if site.email -%}
+          <li>Marina: <a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+          {%- endif -%}
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
