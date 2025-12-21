@@ -177,6 +177,27 @@ h3, h4
   font-size: 25px
   line-height: 38px
 
+.button
+  display: inline-block
+  padding: 10px 20px
+  text-decoration: none
+  background-color: $brown
+  color: $navy
+  border: 0px solid $offwhite
+  border-radius: 30px
+  cursor: pointer
+  text-align: center
+  transition: background-color 300ms
+  &:hover
+    border: 1px solid $offwhite
+    background-color: lighten($brown, 5%)
+    text-decoration: none
+  &:active
+    background-color: lighten($brown, 15%)
+  &:focus-visible
+    outline: 2px solid $offwhite
+    outline-offset: 2px
+
 .site-footer
   background: $navy
   .wrapper
