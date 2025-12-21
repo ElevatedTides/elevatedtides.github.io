@@ -1,9 +1,10 @@
 ---
-layout: default
+layout: about
 title: About
 permalink: /about/
+image_sliders:
+  - about_slider
 ---
-
 
 ## Built in the late 1970s by the late Jewel Goddard, a lifelong sailor who once crossed the Pacific in a Morgan Out Island 41 sailboat.
 
@@ -12,4 +13,3 @@ Elevated Tides is a unique waterfront destination in Portland, Oregon, offering 
 The floating sauna at Elevated Tides offers a serene, wood-fired retreat with panoramic views of the Columbia River, providing guests with a tranquil space to relax and recharge. Whether you’re seeking a peaceful solo escape or a unique group gathering, the sauna experience is designed to promote wellness and connection with nature.
 
 Elevated Tides is committed to maintaining the legacy of the moorage while enhancing the waterfront experience for the community.
-

@@ -5,24 +5,26 @@
 
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
-    	<h2 class="footer-heading">{{ site.title | escape }}</h2>
+    	<h4 class="footer-heading">{{ site.title | escape }}</h4>
+	<p><a href="https://ebbandember.com" target="_blank">Ebb & Ember Floating Saunas</a></p>
+      </div>
+
+      <div class="footer-col footer-col-2">
+    	<h4 class="footer-heading">Address</h4>
 	{%- if site.address -%}
         <p>{{- site.address -}}</p>
 	{%- endif -%}
 	<p><a href="https://g.co/kgs/Bhs8JLD">Google Maps</a></p>
       </div>
 
-      <div class="footer-col footer-col-2">
-    	<h2 class="footer-heading">Connect</h2>
-	{%- if site.phone -%}
-	<a href="tel:{{ site.phone }}">{{ site.phone }}</a>
-	{%- endif -%}
-      </div>
-
       <div class="footer-col footer-col-3">
+    	<h4 class="footer-heading">Connect</h4>
         <ul class="contact-list">
+	  {%- if site.phone -%}
+	  <li><a href="tel:{{ site.phone }}">{{ site.phone }}</a></li>
+	  {%- endif -%}
           {%- if site.email -%}
-          <li>Marina: <a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+	  <li><p>Marina: <a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></p></li>
           {%- endif -%}
         </ul>
       </div>

@@ -99,56 +99,58 @@ body
   padding-top: 10vw
   max-width: 78%
   margin: 0 auto
-  .container
+
+.container
+  display: flex
+  flex-direction: row
+  .left
+    gap: 1em
+    width: 50%
+  .right
+    gap: 1em
+    width: 50%
+  .front
+    margin-top: -200px
+  .marina-item
+    border: 1px solid rgba(0,0,0,.15)
+    width: 90%
+    margin-bottom: 20px
+    padding: 20px
     display: flex
     flex-direction: row
-    .left
-      gap: 1em
-      width: 50%
-    .right
-      gap: 1em
-      width: 50%
-    .front
-      margin-top: -200px
-    .marina-item
-      border: 1px solid rgba(0,0,0,.15)
-      width: 90%
-      margin-bottom: 20px
-      padding: 20px
-      display: flex
-      flex-direction: row
-      align-items: center
-      transition: border 0.3s ease
-      &:hover
-        border: 1px solid rgba(0,0,0,.3)
-        box-shadow: 1px 1px 1px rgba(0,0,0,.25)
-      h4
-        width: 23%
-      .desc
-        width: 52%
-      .price
-        width: 25%
-        text-align: center
-  .accordion
-    input[type="radio"]
-      appearance: none
-      position: fixed
-      top: -100vh
-      left: -100vh
-      & ~ .answer
-        padding-left: 20px
-        max-height: 0
-        overflow: hidden
-        transition: max-height 500ms
-      &:checked ~ div
-        max-height: 1000px
-    h3
-      display: block
-      cursor: pointer
-      color: $navy
-      transition: color 500ms ease
-      &:hover
-        color: $brown
+    align-items: center
+    transition: border 0.3s ease
+    &:hover
+      border: 1px solid rgba(0,0,0,.3)
+      box-shadow: 1px 1px 1px rgba(0,0,0,.25)
+    h4
+      width: 23%
+    .desc
+      width: 52%
+    .price
+      width: 25%
+      text-align: center
+
+.accordion
+  input[type="radio"]
+    appearance: none
+    position: fixed
+    top: -100vh
+    left: -100vh
+    & ~ .answer
+      padding-left: 20px
+      max-height: 0
+      overflow: hidden
+      transition: max-height 500ms
+    &:checked ~ div
+      max-height: 1200px
+  h3
+    display: block
+    cursor: pointer
+    color: $navy
+    transition: color 500ms ease
+    &:hover
+      color: $brown
 
 h2
   padding-top: 50px
@@ -165,5 +167,24 @@ h3, h4
   font-size: 25px
   line-height: 38px
 
-footer
+.site-footer
   background: $navy
+  .wrapper
+    max-width: 78%
+  .footer-col-wrapper
+    width: 100%
+    padding-top: 2vw
+  .footer-col
+    width: 30%
+  a
+    color: $offwhite
+    transition: color 250ms ease
+    &:hover
+      color: white
+  p
+    color: $offwhite
+    font-size: 18px
+  h4
+    color: $offwhite
+    font-size: 22px
+    line-height: 28px

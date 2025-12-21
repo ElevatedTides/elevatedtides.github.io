@@ -1,0 +1,48 @@
+- selector: about_slider
+  bullets: true
+  images:
+    - src: /assets/img/NE-Bridgeton-rd-02-2048x1536.jpg
+      alt: Elevated Tides Marina
+    - src: /assets/img/NE-Bridgeton-rd-03-2048x1536.jpg
+      alt: Elevated Tides Marina
+    - src: /assets/img/NE-Bridgeton-rd-04-2048x1536.jpg
+      alt: Elevated Tides Marina
+    - src: /assets/img/NE-Bridgeton-rd-05-2048x1536.jpg
+      alt: Elevated Tides Marina
+    - src: /assets/img/NE-Bridgeton-rd-07-2048x1536.jpg
+      alt: Elevated Tides Marina
+    - src: /assets/img/NE-Bridgeton-rd-11-2048x1536.jpg
+      alt: Elevated Tides Marina
+    - src: /assets/img/NE-Bridgeton-rd-12-2048x1536.jpg
+      alt: Elevated Tides Marina
+    - src: /assets/img/NE-Bridgeton-rd-13-2048x1536.jpg
+      alt: Elevated Tides Marina
+    - src: /assets/img/NE-Bridgeton-rd-15-2048x1536.jpg
+      alt: Elevated Tides Marina
+    - src: /assets/img/NE-Bridgeton-rd-16-2048x1536.jpg
+      alt: Elevated Tides Marina
+    - src: /assets/img/NE-Bridgeton-rd-17-2048x1536.jpg
+      alt: Elevated Tides Marina
+    - src: /assets/img/NE-Bridgeton-rd-18-2048x1536.jpg
+      alt: Elevated Tides Marina
+    - src: /assets/img/NE-Bridgeton-rd-19-2048x1536.jpg
+      alt: Elevated Tides Marina
+    - src: /assets/img/NE-Bridgeton-rd-20-2048x1536.jpg
+      alt: Elevated Tides Marina
+    - src: /assets/img/NE-Bridgeton-rd-21-2048x1536.jpg
+      alt: Elevated Tides Marina
+    - src: /assets/img/NE-Bridgeton-rd-22-2048x1536.jpg
+      alt: Elevated Tides Marina
+    - src: /assets/img/NE-Bridgeton-rd-23-2048x1536.jpg
+      alt: Elevated Tides Marina
+  settings:
+    height: "'auto'"
+    initialHeight:
+    maxHeight:
+    interval:
+    transitionDuration:
+    effect:
+    disableNav:
+    keyboardNav:
+    previousNavSelector:
+    nextNavSelector:
