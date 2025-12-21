@@ -1,10 +1,6 @@
 ---
-layout: default
+layout: home
 ---
-
-{% include hero.html %}
-
-{% include submenu.html %}
 
 ## Moor your boat at Elevated Tides
 
