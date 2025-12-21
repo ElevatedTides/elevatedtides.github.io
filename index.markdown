@@ -4,6 +4,8 @@ layout: default
 
 {% include hero.html %}
 
+{% include submenu.html %}
+
 ## Moor your boat at Elevated Tides
 
 Elevated Tides Marina features 76 slips and side-tie berths, accommodating boats up to 45 feet in length. It welcomes sailboats, small powerboats, ski boats, fishing boats, cuddy cabin vessels, kayaks, and canoes. Amenities include 30-amp shore power, water on the docks, ample free parking, and a friendly, boater-managed staff dedicated to making the rental process straightforward and enjoyable. Elevated Tides is committed to maintaining the legacy of the moorage while enhancing the waterfront experience for the community.
