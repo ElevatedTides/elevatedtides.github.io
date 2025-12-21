@@ -36,6 +36,9 @@ body
     max-width: $pageWidth
     .site-nav
       margin-left: 40px
+      z-index: 1000
+      .trigger
+        z-index: 1000
       a
         color: $navy
         transition: color 0.25s ease
@@ -54,7 +57,7 @@ body
 
 .hero
   background: $navy
-  height: 330px
+  min-height: 330px
   .wrapper
     max-width: $pageWidth
     margin: 0 auto
@@ -77,7 +80,6 @@ body
   position: sticky
   height: 72px
   top: 76px
-  z-index: 100
   margin-bottom: 10vw
   ul
     padding-top: 5px
@@ -108,14 +110,20 @@ body
 .container
   display: flex
   flex-direction: row
+  @media screen and (max-width: 600px)
+    flex-direction: column
   justify-content: space-between
   gap: 2em
   .left
     gap: 1em
     width: 50%
+    @media screen and (max-width: 600px)
+      width: 100%
   .right
     gap: 1em
     width: 50%
+    @media screen and (max-width: 600px)
+      width: 100%
   .front
     margin-top: -200px
   .marina-item
@@ -125,6 +133,8 @@ body
     padding: 20px
     display: flex
     flex-direction: row
+    @media screen and (max-width: 600px)
+      flex-direction: column
     align-items: center
     transition: border 0.3s ease
     &:hover
@@ -132,10 +142,16 @@ body
       box-shadow: 1px 1px 1px rgba(0,0,0,.25)
     h4
       width: 23%
+      @media screen and (max-width: 600px)
+        width: 100%
     .desc
       width: 52%
+      @media screen and (max-width: 600px)
+        width: 100%
     .price
       width: 25%
+      @media screen and (max-width: 600px)
+        width: 100%
       text-align: center
 
 .carousel-wrapper
@@ -177,6 +193,30 @@ h3, h4
   font-size: 25px
   line-height: 38px
 
+.site-footer
+  background: $navy
+  .wrapper
+    max-width: $pageWidth
+  .footer-col-wrapper
+    width: 100%
+    padding-top: 2vw
+  .footer-col
+    width: 30%
+    @media screen and (max-width: 600px)
+      width: 100%
+  a
+    color: $offwhite
+    transition: color 250ms ease
+    &:hover
+      color: white
+  p
+    color: $offwhite
+    font-size: 18px
+  h4
+    color: $offwhite
+    font-size: 22px
+    line-height: 28px
+
 .button
   display: inline-block
   padding: 10px 20px
@@ -197,25 +237,3 @@ h3, h4
   &:focus-visible
     outline: 2px solid $offwhite
     outline-offset: 2px
-
-.site-footer
-  background: $navy
-  .wrapper
-    max-width: 78%
-  .footer-col-wrapper
-    width: 100%
-    padding-top: 2vw
-  .footer-col
-    width: 30%
-  a
-    color: $offwhite
-    transition: color 250ms ease
-    &:hover
-      color: white
-  p
-    color: $offwhite
-    font-size: 18px
-  h4
-    color: $offwhite
-    font-size: 22px
-    line-height: 28px
