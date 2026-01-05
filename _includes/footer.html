@@ -13,7 +13,10 @@
     	<h4 class="footer-heading">Address</h4>
 	{%- if site.address -%}
         <p>{{- site.address -}}</p>
-	<p><a href="http://maps.apple.com/?q={{- site.address | replace: ' ', '+' | replace: ',', '' | replace: '<br>', '' -}}" target="_blank">Google Maps</a></p>
+	<p><a href="http://maps.apple.com/?q={{- site.address | replace: ' ', '+' | replace: ',', '' | replace: '<br>', '' -}}" target="_blank">Map</a></p>
+	{%- endif -%}
+	{%- if site.geo_link -%}
+	<p><a href="{{- site.geo_link -}}" target="_blank">Mobile Map</a></p>
 	{%- endif -%}
       </div>
 

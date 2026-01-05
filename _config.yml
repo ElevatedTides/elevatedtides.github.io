@@ -26,6 +26,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 address: >-
   173 NE Bridgeton Rd<br>
   Portland, Oregon 97211
+geo_link: geo:45.602536402089505,-122.66235968852868
 address1: 173 NE Bridgeton Rd
 address2: Portland, Oregon 97211
 phone: (503) 839-4459
