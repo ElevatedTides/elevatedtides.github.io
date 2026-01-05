@@ -13,8 +13,8 @@
     	<h4 class="footer-heading">Address</h4>
 	{%- if site.address -%}
         <p>{{- site.address -}}</p>
+	<p><a href="http://maps.apple.com/?q={{- site.address | replace: ' ', '+' | replace: ',', '' | replace: '<br>', '' -}}" target="_blank">Google Maps</a></p>
 	{%- endif -%}
-	<p><a href="https://g.co/kgs/Bhs8JLD">Google Maps</a></p>
       </div>
 
       <div class="footer-col footer-col-3">

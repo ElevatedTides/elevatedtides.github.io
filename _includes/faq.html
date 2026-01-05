@@ -9,7 +9,9 @@
       <p>173 NE Bridgeton Rd<br>
       Slip 26<br>
       Portland, Oregon 97211</p>
-      <p><a href="https://g.co/kgs/Bhs8JLD">Google Maps</a></p>
+      {%- if site.address -%}
+      <p><a href="https://maps.apple.com/?q={{- site.address | replace: ' ', '+' | replace: ',', '' | replace: '<br>', '' -}}" target="_blank">Map</a></p>
+      {%- endif -%}
     </div>
   </div>
 
@@ -70,7 +72,7 @@
       <h3>Do you have payment late fees?</h3>
     </label>
     <div class="answer">
-      <p>We hate this one, we are boaters, not bankers, but…Rent is due on the 1st, and delinquent on the 10th.  Payments received after the 10th and checks not honored by the bank are subject to a $25 fee.</p>
+      <p>We hate this one, we are boaters, not bankers, but... Rent is due on the 1st, and delinquent on the 10th. Payments received after the 10th and checks not honored by the bank are subject to a $25 fee.</p>
     </div>
   </div>
 </div>

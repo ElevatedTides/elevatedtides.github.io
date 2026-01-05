@@ -1,8 +1,10 @@
 <header class="site-header" role="banner">
 
   <div class="wrapper">
+    {% comment }}
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
+    {% endcomment %}
     <a class="site-title" rel="author" href="{{ "/" | relative_url }}">
       <img src="/assets/img/logo.png" height="60">
     </a>
