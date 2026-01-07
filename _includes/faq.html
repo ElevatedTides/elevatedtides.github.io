@@ -10,7 +10,7 @@
       Slip 26<br>
       Portland, Oregon 97211</p>
       {%- if site.address -%}
-      <p><a href="https://maps.google.com/?q={{- site.address | replace: ' ', '+' | replace: ',', '' | replace: '<br>', '' -}}" target="_blank">Map</a></p>
+      <p>{%- include map-link.html -%}</p>
       {%- endif -%}
     </div>
   </div>
@@ -35,7 +35,7 @@
       <p>We have 76 slips and side-tie berths that accommodate vessels up to 45 feet.</p>
     </div>
   </div>
-  
+
   <div>
     <input id="faq-4" type="radio" name="faq">
     <label for="faq-4">
@@ -76,4 +76,3 @@
     </div>
   </div>
 </div>
-

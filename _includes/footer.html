@@ -13,7 +13,7 @@
     	<h4 class="footer-heading">Address</h4>
 	{%- if site.address -%}
         <p>{{- site.address -}}</p>
-	<p><a href="http://maps.google.com/?q={{- site.address | replace: ' ', '+' | replace: ',', '' | replace: '<br>', '' -}}" target="_blank">Map</a></p>
+	<p>{%- include map-link.html -%}</p>
 	{%- endif -%}
       </div>
 
