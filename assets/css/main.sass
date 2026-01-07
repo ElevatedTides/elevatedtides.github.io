@@ -21,6 +21,7 @@ body
   letter-spacing: -0.02em
 
 .site-header
+  z-index: 101
   position: sticky
   top: 0
   background: $brown
@@ -58,6 +59,7 @@ body
 .hero
   background: $navy
   min-height: 330px
+  z-index: 100
   .wrapper
     max-width: $pageWidth
     margin: 0 auto
@@ -78,6 +80,7 @@ body
         width: 100%
 
 .sub-menu
+  z-index: 99
   background: $navy
   position: sticky
   height: 72px
@@ -160,9 +163,6 @@ body
         width: 100%
       text-align: center
 
-.carousel-wrapper
-  margin-top: 10vw
-
 .accordion
   input[type="radio"]
     appearance: none
@@ -223,30 +223,3 @@ h3, h4
     color: $offwhite
     font-size: 22px
     line-height: 28px
-
-.button
-  display: inline-block
-  padding: 10px 20px
-  text-decoration: none
-  background-color: $brown
-  color: $navy
-  border: 0px solid $offwhite
-  border-radius: 30px
-  cursor: pointer
-  text-align: center
-  transition: background-color 300ms
-  &:hover
-    border: 1px solid $offwhite
-    background-color: lighten($brown, 5%)
-    text-decoration: none
-  &:active
-    background-color: lighten($brown, 15%)
-  &:focus-visible
-    outline: 2px solid $offwhite
-    outline-offset: 2px
-
-.about-page
-  .left
-    h2
-      @media screen and (max-width: 912px)
-        font-size: 4vh

@@ -6,18 +6,14 @@
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
     	<h4 class="footer-heading">{{ site.title | escape }}</h4>
-	<p><a href="https://ebbandember.com" class="button brown" target="_blank">Ebb & Ember Floating Saunas</a></p>
+	<p><a href="https://ebbandember.com" target="_blank">Ebb & Ember Floating Saunas</a></p>
       </div>
 
       <div class="footer-col footer-col-2">
     	<h4 class="footer-heading">Address</h4>
 	{%- if site.address -%}
         <p>{{- site.address -}}</p>
-	<p><a href="http://maps.google.com/?q={{- site.address | replace: ' ', '+' | replace: ',', '' | replace: '<br>', '' -}}" target="_blank">Google Map</a></p>
-	<p><a href="http://maps.apple.com/?q={{- site.address | replace: ' ', '+' | replace: ',', '' | replace: '<br>', '' -}}" target="_blank">Apple Map</a></p>
-	{%- endif -%}
-	{%- if site.geo_link -%}
-	<p><a href="{{- site.geo_link -}}" target="_blank">Mobile Map</a></p>
+	<p><a href="http://maps.google.com/?q={{- site.address | replace: ' ', '+' | replace: ',', '' | replace: '<br>', '' -}}" target="_blank">Map</a></p>
 	{%- endif -%}
       </div>
 

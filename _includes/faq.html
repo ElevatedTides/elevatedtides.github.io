@@ -10,7 +10,7 @@
       Slip 26<br>
       Portland, Oregon 97211</p>
       {%- if site.address -%}
-      <p><a href="https://maps.apple.com/?q={{- site.address | replace: ' ', '+' | replace: ',', '' | replace: '<br>', '' -}}" target="_blank">Map</a></p>
+      <p><a href="https://maps.google.com/?q={{- site.address | replace: ' ', '+' | replace: ',', '' | replace: '<br>', '' -}}" target="_blank">Map</a></p>
       {%- endif -%}
     </div>
   </div>
