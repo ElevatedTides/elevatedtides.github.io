@@ -76,7 +76,7 @@ body
       margin-top: -8px
       padding-bottom: 1.1em
       width: 65.5%
-      @media screen and (max-width: 912px)
+      @media screen and (max-width: 1425px)
         width: 100%
 
 .sub-menu
@@ -117,23 +117,23 @@ body
 .container
   display: flex
   flex-direction: row
-  @media screen and (max-width: 912px)
+  @media screen and (max-width: 1425px)
     flex-direction: column
   justify-content: space-between
   gap: 2em
   .left
     gap: 1em
     width: 50%
-    @media screen and (max-width: 912px)
+    @media screen and (max-width: 1425px)
       width: 100%
   .right
     gap: 1em
     width: 50%
-    @media screen and (max-width: 912px)
+    @media screen and (max-width: 1425px)
       width: 100%
   .front
     margin-top: -200px
-    @media screen and (max-width: 912px)
+    @media screen and (max-width: 1425px)
       margin-top: -30px
   .marina-item
     border: 1px solid rgba(0,0,0,.15)
@@ -141,30 +141,22 @@ body
     margin-bottom: 20px
     padding: 20px
     display: flex
-    flex-direction: row
-    @media screen and (max-width: 912px)
-      flex-direction: column
+    flex-direction: column
     align-items: center
     transition: border 0.3s ease
     &:hover
       border: 1px solid rgba(0,0,0,.3)
       box-shadow: 1px 1px 1px rgba(0,0,0,.25)
     h4
-      width: 23%
-      @media screen and (max-width: 912px)
-        width: 100%
+      width: 100%
     .desc
-      width: 52%
-      @media screen and (max-width: 912px)
-        width: 100%
+      width: 100%
     .price
-      width: 25%
-      @media screen and (max-width: 912px)
-        width: 100%
+      width: 100%
       text-align: center
 
 .accordion
-  input[type="radio"]
+  input[type="checkbox"]
     appearance: none
     position: fixed
     top: -100vh
@@ -176,13 +168,25 @@ body
       transition: max-height 500ms
     &:checked ~ div
       max-height: 1200px
+    &:checked > h3
+      &::after
+        transform: translateY(-5%) translateX(50%) rotate(-90deg)
   h3
     display: block
     cursor: pointer
     color: $navy
     transition: color 500ms ease
+    &::after
+      content: ' >'
+      font-weight: 700
+      position: absolute
+      display: inline-block
+      transform: translateY(-5%) translateX(50%) rotate(0deg)
+      transition: transform 250ms ease
     &:hover
       color: $brown
+      &::after
+        transform: translateY(5%) translateX(50%) rotate(90deg)
 
 h2
   scroll-margin-top: 100px
@@ -209,13 +213,15 @@ h3, h4
     padding-top: 2vw
   .footer-col
     width: 30%
-    @media screen and (max-width: 912px)
+    @media screen and (max-width: 1425px)
       width: 100%
   a
     color: $offwhite
-    transition: color 250ms ease
+    opacity: .7
+    transition: opacity 0.25s ease
     &:hover
-      color: white
+      text-decoration: none
+      opacity: 1
   p
     color: $offwhite
     font-size: 18px
