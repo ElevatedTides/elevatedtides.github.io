@@ -169,24 +169,25 @@ body
     &:checked ~ div
       max-height: 1200px
     &:checked > h3
-      &::after
-        transform: translateY(-5%) translateX(50%) rotate(-90deg)
+      &::before
+        transform: translateY(-5%) translateX(-125%) rotate(-90deg)
   h3
     display: block
     cursor: pointer
+    padding-left: 1.5vw
     color: $navy
     transition: color 500ms ease
-    &::after
-      content: ' >'
+    &::before
+      content: '> '
       font-weight: 700
       position: absolute
       display: inline-block
-      transform: translateY(-5%) translateX(50%) rotate(0deg)
+      transform: translateY(-5%) translateX(-125%) rotate(0deg)
       transition: transform 250ms ease
     &:hover
       color: $brown
-      &::after
-        transform: translateY(5%) translateX(50%) rotate(90deg)
+      &::before
+        transform: translateY(5%) translateX(-125%) rotate(90deg)
 
 h2
   scroll-margin-top: 100px
